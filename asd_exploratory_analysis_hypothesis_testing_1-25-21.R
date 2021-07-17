@@ -1,7 +1,8 @@
 # Dimitri Zaras - 1/25/2021
-# Preliminary Data Analysis for the comparison of entropy values between ASD, MCI, and AD patients
+# Preliminary Data Analysis for the comparison of Shannon Entropy values between ASD, MCI, and AD patients
 library(ggplot2); library(HSAUR); library(Rmisc); library(car); library(dplyr)
 
+# import the main dataset which includes the relevant cases from both ADNI and ABIDE II datasets
 # this dataset contains the info for all patients from both original datasets, treatment and control
 asd_data <- read.csv("~/OneDrive - Emory University/Stats HelpDesk/Nishant/asd_data.csv")
 
