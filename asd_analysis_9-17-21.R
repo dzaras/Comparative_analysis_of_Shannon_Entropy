@@ -58,7 +58,9 @@ library("ggpubr")
 ggboxplot(asd_new, x = "Clinical", y = "ADN1Entropy", color = "Dataset",
           palette = c("#00AFBB", "#E7B800"))
 
-
+# Update: 10/24/21 - while we started this part of the analysis by using the Hampel Filter method here, we later realized that
+# the Hampel Filter method is probably not the best fit for our data, considering we don't have time series or sequence data and
+# what we want to accomplish with our outlier detection can be handled with simpler methods
 
 # Hampel filter to take care of outliers - for both controls and treatments 
 lower_bound <- median(asd_conADNI1$MMSE.Score) - 3 * mad(asd_conADNI1$MMSE.Score, constant = 1)
