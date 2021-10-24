@@ -226,7 +226,7 @@ print(abide1$knn_score[top5_knn])
 plot(SRS.Total ~ KBIT_Score, data = abide1, cex = knn_score, pch = 20)
 
 # The LOF (Local Outlier Factor) score - although it's probably unnecessary because of what our data looks like
-# I have already scaled the abide dataset
+# btw - I have already scaled the abide dataset
 
 # Add lof_score column to abide1
 #abide1 <- abide
